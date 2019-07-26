@@ -245,7 +245,8 @@ var table1 = document.getElementById('myTable');
           $result = $conn->query($get_inbox);
           if ($result->num_rows > 0) {
               // output data of each row
-              while($row = $result->fetch_assoc()) {
+              
+              }while($row = $result->fetch_assoc()) {
                 echo "<tr>
                         <td>".$row["id"]."</td>
                         <td>".$row["file_no"]."</td>
@@ -256,9 +257,7 @@ var table1 = document.getElementById('myTable');
                         <td>".$row["letter_date"]."</td>
                         <td>".$row["user_name"]."</td>
                         <td>".$row["status"]."</td>
-                        
                      </tr>";
-              }
           } 
           // else {
           //   $response['error']=true;

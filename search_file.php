@@ -143,25 +143,11 @@ else {
 
 <!-- ############ PAGE START-->
 
-<script>
 
 
 
 
-var table1 = document.getElementById('myTable');
-    
-    for(var index = 1; index < table1.rows.length; index++)
-    {
-        table1.rows[index].onclick = function()
-        {
-              console.log('data ' +this);
-            var id = this.cells[0].innerHTML;
-            window.location='file_info.php?pid=1&tid='+id;
-        };
-    }
 
-
-</script>
 
 <div class="padding">
   <div class="box">
@@ -374,6 +360,19 @@ var table1 = document.getElementById('myTable');
 
 <!-- endbuild -->
 <script>
+  var table1 = document.getElementById('myTable');
+    
+    for(var index = 1; index < table1.rows.length; index++)
+    {
+        table1.rows[index].onclick = function()
+        {
+              console.log('data ' +this);
+            var id = this.cells[0].innerHTML;
+            window.location='file_info.php?pid=1&tid='+id;
+        };
+    }
+
+
 $( document ).ready(function(){
                 var table = document.getElementById('myTable');
                

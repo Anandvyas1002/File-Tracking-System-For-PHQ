@@ -140,20 +140,7 @@ else {
 
 <!-- ############ PAGE START-->
 
-<script>
-    
-    var table = document.getElementById('myTable');
-    
-    for(var i = 1; i < table.rows.length; i++)
-    {
-        table.rows[i].onclick = function()
-        {
-            var id = this.cells[0].innerHTML;
-            window.location='file_info.php?pid=2&tid='+id;
-        };
-    }
 
-</script>
 
 
 <div class="padding">
@@ -370,6 +357,18 @@ else {
 </body>
 </html>
 <script>
+
+    var table1 = document.getElementById('myTable');
+    
+    for(var i = 1; i < table1.rows.length; i++)
+    {
+        table1.rows[i].onclick = function()
+        {
+            var id = this.cells[0].innerHTML;
+            window.location='file_info.php?pid=2&tid='+id;
+        };
+    }
+
 $( document ).ready(function(){
                 var table = document.getElementById('myTable');
                
