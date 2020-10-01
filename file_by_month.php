@@ -1,4 +1,7 @@
 <?php
+/*
+File contains code for searching files by months
+*/
 session_start();
 if ($_SESSION["logged_in"]=="true" && $_SESSION["privilage"]=="0") {
   include("menu/menu_user.php");

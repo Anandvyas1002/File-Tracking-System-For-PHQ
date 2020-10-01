@@ -1,4 +1,7 @@
 <?php
+/*
+this file contains the code for file inbox
+*/
 session_start();
 if ($_SESSION["logged_in"]=="true" && $_SESSION["privilage"]=="0") {
   include("../php/config.php");

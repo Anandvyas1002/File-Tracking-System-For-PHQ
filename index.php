@@ -10,6 +10,7 @@ if (isset($_SESSION["logged_in"])) {
   }
 }
 ?>
+/*this is the Home page*/
 <!DOCTYPE html>
 <html lang="en">
   <head>
