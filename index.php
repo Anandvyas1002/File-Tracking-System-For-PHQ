@@ -1,4 +1,5 @@
 <?php
+//this is the Home page
 include('php/config.php');
 session_start();
 if (isset($_SESSION["logged_in"])) {
@@ -10,8 +11,9 @@ if (isset($_SESSION["logged_in"])) {
   }
 }
 ?>
-/*this is the Home page*/
+
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
